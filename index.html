@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\loginstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <p id="Header-text">Datta Meghe College of Enginnering</p>
+    </header>
+    <main>
+        <section class="container">
+            <div class="left-container">
+                <div class="image-container"></div>
+
+                <div class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab magni ipsa fugit impedit molestiae voluptatibus. Beatae voluptatibus vitae totam autem!</div>
+            </div>
+            <div class="right-container">
+                <div class="form-box">
+                    <div class="btn-box">
+                        <div id="btn"></div>
+                        <button class="toggle-btn" onclick="studentlogin()">Student</button>
+                        <button class="toggle-btn" onclick="teacherlogin()">Teacher</button>
+                    </div>
+                    <form action=""id ="student" class="login-page">
+                        <input type="text" name="" id="" placeholder="Enter Student-ID" class="input-data" required>
+                        <input type="password" name="" id="" placeholder="Enter your Password" class="input-data" required>
+                        <input type="submit" value="Login as Student" class="submit-btn">
+                    </form>
+                    <form action="" id= "teacher" class="login-page">
+                        <input type="text" name="" id="" placeholder="Enter Teacher-ID" class="input-data" required>
+                        <input type="password" name="" id="" placeholder="Enter your Password" class="input-data" required>
+                        <input type="submit" value="Login as Teacher" class="submit-btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var student = document.getElementById("student");
+        var teacher = document.getElementById("teacher");
+        var btn = document.getElementById("btn");
+
+        function teacherlogin(){
+            student.style.left = "-45rem";
+            teacher.style.left= "0rem";
+            btn.style.left= "11rem";
+        }
+        function studentlogin(){
+            student.style.left = "0rem";
+            teacher.style.left= "45rem";
+            btn.style.left= "0";
+        }
+        
+    </script>
+</body>
+</html>
